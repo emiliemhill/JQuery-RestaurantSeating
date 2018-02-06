@@ -1,7 +1,6 @@
-$(document).ready(function () {
-    $(".table").click(function () {
+$(document).ready(function (){
+        $(".table").click(function () {
         $("form").toggleClass("show");
-        console.log($(this).text());
         var thisTable = $(this);
         var tableNumber = thisTable.text();
         $(".table-number").text(tableNumber);
@@ -12,7 +11,8 @@ $(document).ready(function () {
         });
         $("button").click(function () {
             $("#popup").addClass("hidden");
-        })
+        });
+
     });
 });
 
