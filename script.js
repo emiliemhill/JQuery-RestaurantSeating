@@ -7,10 +7,9 @@ $(document).ready(function (){
         $("#save").click(function () {
             thisTable.removeClass("available");
             thisTable.addClass("reserved");
-            $("form").addClass("hidden");
         });
         $("button").click(function () {
-            $("#popup").addClass("hidden");
+            $("form").removeClass("show");
         });
 
     });
