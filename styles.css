@@ -47,6 +47,9 @@ html {
     cursor: cell;
 
 }
+.table:hover {
+    background-color: rgb(128, 119, 153);
+}
 .available {
     background-color: #eeeeee;
 }
@@ -78,6 +81,8 @@ form {
     display: none;
 
 }
+
+
 form.show {
     display: flex;
     z-index: 10;
@@ -110,6 +115,7 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 25px;
+    font-family: "roboto mono";
 }
 #save {
     height: 40px;
@@ -132,4 +138,20 @@ input {
 }
 .hidden {
     display: none;
+}
+.table .hover {
+    width: 150px;
+    height: 75px;
+    background-color: #adaaaa;
+    color: black;
+    font-family: "roboto mono";
+    border-radius: 5%;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 1px;
+}
+.table:hover .hover {
+    display: block;
 }
