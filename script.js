@@ -1,14 +1,18 @@
 $(document).ready(function () {
     $(".table").click(function () {
-        $("form").toggleClass("show");
+
+        $("form").fadeIn();
+
         var thisTable = $(this);
         var tableNumber = thisTable.text();
         $(".table-number").text(tableNumber);
 
+
     });
 
     $("button").click(function () {
-        $("form").removeClass("show");
+        $("form").fadeOut();
+
 
     });
 
@@ -33,7 +37,9 @@ $(document).ready(function () {
 
 
 
+
     });
+
 });
 
 
